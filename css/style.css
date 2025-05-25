@@ -1,3 +1,31 @@
+
+.btn{
+    background-color: greenyellow;
+    border: none;
+    padding: 15px;
+    width: max-content;
+    border-radius: 10px;
+    color: white;
+    animation: btnAnimations 5s linear infinite alternate;
+
+}
+.btn:hover{
+    background-color: aqua;
+    color: black;
+}
+
+@keyframes btnAnimations {
+    0%{
+        transform: translatey(20px);
+    }
+    50%{
+        transform: translatex(10px);
+    }
+    100%{
+        transform: translatey(-20px);
+    }
+}
+
 input[type=text], select {
   width: 100%;
   padding: 12px 20px;
@@ -28,3 +56,4 @@ input[type=submit]:hover {
   background-color: #f2f2f2;
   padding: 20px;
 }
+
